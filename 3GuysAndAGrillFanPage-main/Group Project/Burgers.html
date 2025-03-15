@@ -1,0 +1,236 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Three Guys And A Grill</title>
+    <link rel="icon" type="image/x-icon" href="images/logo.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+    .logo {
+        margin-left: 50px; 
+    }
+
+    .navbar-toggler-icon {
+        background-color: black;
+    }
+
+    .navbar-collapse .nav-link {
+        font-size: 20px;
+        text-decoration: none;
+        margin: 10px; 
+    }
+
+    .navbar-collapse {
+        justify-content: flex-end;
+    }
+
+    .navbar-nav .nav-item .nav-link {
+        color: rgb(0, 0, 0);
+    }
+    
+    .navbar-nav .nav-item:hover .nav-link {
+        color: red;
+    }   
+
+    .container {
+        padding-left: 0;
+        padding-right: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .navbar {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .navbar-toggler {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .dropdown-menu a {
+        font-size: large;
+        padding: 10;
+    }
+
+    .col .aboutUsDropdown {
+        color: black;
+
+    }
+
+    .content video {
+        min-width: 100%;
+        min-height: 100%;
+        position: fixed;
+        right: 0;
+        bottom: 0;
+    }
+
+    .web-body {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .web-body a img {
+        position: relative;
+        z-index: 5;
+        border: double rgb(255, 201, 51);
+        border-width: 5px;
+        margin: 10px;
+        transition: .5s;
+    }
+
+    .web-body a img:hover {
+        transform: translateY(-50px);
+        transition: transform 1s ease, box-shadow 1s ease;
+        box-shadow: 10px 10px 20px rgb(0, 0, 0);
+    }
+
+    footer {
+        position: relative;
+        bottom: 0;
+        z-index: 6;
+        background-color: rgb(247, 183, 45);
+        padding-bottom: 50px;
+        width: 100%;
+        }
+
+        footer table, .footer-text {
+            width: 50%;
+            margin-left: 50px;
+            line-height: 50px;
+            font-weight: bold;
+            color: black;
+        }
+
+        table a { 
+            color: black;
+            height: 20px;
+        }
+
+        h2 {
+            font-weight: bold;
+            color: black;
+        }
+
+    .top {
+        position: relative;
+        font-size: x-large;
+        font-weight: 600;
+        left: 50px;
+        top: 50px;
+        color: rgb(0, 0, 0);
+    }
+
+</style>
+<body>
+    <a name="top"></a>
+    <div class="content">
+        <video autoplay muted loop id="food">
+            <source src="video.mp4">
+    </video>
+</div>
+    <div class="container">
+        <nav class="navbar navbar-expand-sm bg-warning navbar-dark fixed-top">
+            <a class="logo" href="Main Page.html">
+                <img src="images/logo.png" alt="Logo">
+            </a>
+        
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#col">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        
+            <div class="collapse navbar-collapse" id="col">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="Main Page.html">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="aboutUsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            About Us
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="aboutUsDropdown">
+                            <a class="dropdown-item" href="Our History.html">Our History</a>
+                            <a class="dropdown-item" href="Our Food.html">Our Food</a>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="Contacts.html">Contact Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Location.html">Location</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Delivery.html">Delivery</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="menuDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Menu
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="menuDropdown">
+                            <a class="dropdown-item" href="Hotdog.html">Hotdogs</a>
+                            <a class="dropdown-item" href="Burgers.html">Burgers</a>
+                            <a class="dropdown-item" href="Bundles.html">Bundles</a>
+                            <a class="dropdown-item" href="Sides.html">Sides</a>
+                            <a class="dropdown-item" href="Drinks.html">Drinks</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div class="web-body">
+        <center>
+            <a><img src="images/Burgers/anghang.png"></a>
+            <a><img src="images/burgers/sliders.png"></a>
+            <a><img src="images/Burgers/texas.png"></a>
+            <a><img src="images/Burgers/tommy.png"></a>
+        </center>
+    </div>
+    <footer>
+        <br>
+        <h1 class="footer-text">THREE GUYS AND A GRILL</h1>
+        <table>
+            <tr>
+                <th><h2>Developers</h2></th>
+                <th><h2>Pages</h2></th>
+                <th><h2>Socials</h2></th>
+            </tr>
+            <tr>
+                <td><h3>Sunga, Andhrea Luiza</h3></td>
+                <td><a href="References.html"><h3>References</h3></a></td>
+                <td><a href="https://www.facebook.com/3GuysGrill"><h3>Facebook</h3></a></td>
+            </tr>
+            <tr>
+                <td><h3>Valencia, Jass Simry</h3></td>
+                <td><a href="Our History.html"><h3>Our History</h3></a></td>
+                <td><a href="https://www.instagram.com/threeguysandagrill/"><h3>Instagram</h3></a></td>
+            </tr>
+            <tr>
+                <td><h3>Robles, Nicole Joy</h3></td>
+                <td><a href="Our Food.html"><h3>Our Food</h3></a></td>
+                <td><a href="https://www.threeguysandagrill.com/"><h3>Official Site</h3></a></td>
+            </tr>
+            <tr>
+                <td><h3>Najarro, Nathan Spencer</h3></td>
+                <td><a href="Contacts.html"><h3>Contact Us</h3></a></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><a href="Location.html"><h3>Locations</h3></a></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><a href="Delivery.html"><h3>Delivery</h3></a></td>
+            </tr>
+        </table>
+    </footer>
+</body>
+</html>
